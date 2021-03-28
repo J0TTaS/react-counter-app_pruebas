@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import PrimeraApp from './PrimeraApp.js';
+import CounterApp from './CounterApp.js';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//const saludo = <h1>Hola Mundo</h1>;
+// console.log(saludo);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const divRoot = document.querySelector('#root');
+// console.log(divRoot);
+
+// ReactDOM.render( <PrimeraApp saludoGoku="Hola, soy Goku" saludoVegeta="Hola, soy Vegeta" saludo="Hola, esto es un saludo" otra={1985} />, divRoot );
+ReactDOM.render( <CounterApp value={123456} />, divRoot );
